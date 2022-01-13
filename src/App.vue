@@ -5,6 +5,7 @@
     <AppServices />
     <AppFrameworks />
     <AppSocials />
+    <AppFooter />
   </v-app>
 </template>
 
@@ -13,7 +14,8 @@ import appNav from "./components/NavBar";
 import appCarousel from "./components/CarouSel";
 import appServices from "./components/ServiCes";
 import appFramworks from "./components/FramWorks";
-import appSocials from "./components/SocialMedia"
+import appSocials from "./components/SocialMedia";
+import appFooter from "./components/FooTer";
 export default {
   name: "App",
 
@@ -22,7 +24,8 @@ export default {
     AppCarousel: appCarousel,
     AppServices: appServices,
     AppFrameworks: appFramworks,
-    AppSocials : appSocials
+    AppSocials: appSocials,
+    AppFooter: appFooter,
   },
 
   data: () => ({
