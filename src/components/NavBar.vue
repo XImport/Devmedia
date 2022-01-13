@@ -18,7 +18,7 @@
       </div>
       <v-spacer></v-spacer>
       <div v-for="(item, index) in items" :key="index">
-        <v-btn text class="hidden-xs-only">
+        <v-btn text class="hidden-xs-only" :to="item.url">
           <span class="mr-2">
             <v-icon dark right> home-report </v-icon>
             {{ item.title }}
@@ -30,7 +30,6 @@
       <div>
         <v-list nav dense>
           <v-list-item-group
-            v-model="group"
             active-class="deep-purple--text text--accent-4"
             v-for="(item, index) in items"
             :key="index"
@@ -57,10 +56,10 @@ export default {
   data: () => ({
     drawer: false,
     items: [
-      { title: "Home", icon: "mdi-home" },
-      { title: "Services", icon: "mdi-account-wrench-outline" },
-      { title: "About", icon: "mdi-information" },
-      { title: "Contact", icon: "mdi-email" },
+      { title: "Home", icon: "mdi-home" ,url : "/"},
+      { title: "Services", icon: "mdi-account-wrench-outline" ,url : "/#"},
+      { title: "About", icon: "mdi-information",url : "/about" },
+      { title: "Contact", icon: "mdi-email" ,url : "/#"},
     ],
   }),
 };
