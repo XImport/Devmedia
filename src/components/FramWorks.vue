@@ -2,7 +2,7 @@
   <div class="black">
     <div class="journey-line"></div>
     <div class="text-center bg-cus">
-      <h1 class="purple--text">{{ title }}</h1>
+      <h1 class="white--text">{{ title }}</h1>
       <v-container class="grey lighten-5 black white--text">
         <v-layout>
           <v-row>
@@ -14,6 +14,7 @@
               class="black white--text"
             >
               <v-card
+                data-aos="zoom-in"
                 elevation="2"
                 shaped
                 tile
@@ -21,10 +22,7 @@
                 id="card"
               >
                 <v-avatar size="56">
-                  <img
-                    alt="user"
-                    :src="framework.img"
-                  />
+                  <img alt="user" :src="framework.img" />
                 </v-avatar>
                 <v-card-title class="justify-center black white--text"
                   ><v-icon left class="black white--text"
@@ -60,7 +58,7 @@ export default {
           body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, sapiente. Et aliquid, libero officiis aliquam expedita recusandae minima similique aspernatur corporis molestiae maxime tempora, eligendi quibusdam. Illo, maiores quaerat! Totam?",
           btn: "Learn More",
           icon: "vuejs",
-          img : "https://images.ctfassets.net/ooa29xqb8tix/RrX9HCiZ8qPoIpJSlHphR/f9778b44e2b768d31fafb4ac70956682/vue-logo.png?w=400&q=50"
+          img: "https://images.ctfassets.net/ooa29xqb8tix/RrX9HCiZ8qPoIpJSlHphR/f9778b44e2b768d31fafb4ac70956682/vue-logo.png?w=400&q=50",
         },
 
         {
@@ -68,21 +66,21 @@ export default {
           body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, sapiente. Et aliquid, libero officiis aliquam expedita recusandae minima similique aspernatur corporis molestiae maxime tempora, eligendi quibusdam. Illo, maiores quaerat! Totam?",
           btn: "Learn More",
           icon: "react",
-          img : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN3xvEmDO5XMQ1O7Rgk7Rrf8QKzrN_3jo0co5gTo0lW4G-t0NRcOi2MwJO1XpYzU4CsUA&usqp=CAU"
+          img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN3xvEmDO5XMQ1O7Rgk7Rrf8QKzrN_3jo0co5gTo0lW4G-t0NRcOi2MwJO1XpYzU4CsUA&usqp=CAU",
         },
         {
           title: "SQL",
           body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, sapiente. Et aliquid, libero officiis aliquam expedita recusandae minima similique aspernatur corporis molestiae maxime tempora, eligendi quibusdam. Illo, maiores quaerat! Totam?",
           btn: "Learn More",
           icon: "database-cog",
-          img: "https://thumbs.dreamstime.com/b/sql-database-icon-logo-design-ui-ux-app-gold-inscription-dark-black-background-96842123.jpg"
+          img: "https://thumbs.dreamstime.com/b/sql-database-icon-logo-design-ui-ux-app-gold-inscription-dark-black-background-96842123.jpg",
         },
         {
           title: "Python",
           body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, sapiente. Et aliquid, libero officiis aliquam expedita recusandae minima similique aspernatur corporis molestiae maxime tempora, eligendi quibusdam. Illo, maiores quaerat! Totam?",
           btn: "Learn More",
           icon: "vector-polyline-edit",
-          img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEVDJgFhyaPSObMtrBjvTBs6VnRu64Nx1AzGnCcSqrx1BoDIYBwmmfTDVdFrmG1uEl6qk&usqp=CAU"
+          img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEVDJgFhyaPSObMtrBjvTBs6VnRu64Nx1AzGnCcSqrx1BoDIYBwmmfTDVdFrmG1uEl6qk&usqp=CAU",
         },
       ],
     };

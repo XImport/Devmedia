@@ -7,6 +7,7 @@
         <div id="outer">
           <div class="inner" v-for="(tweet, index) in Tweets" :key="index">
             <v-card
+              data-aos="zoom-in"
               class="mx-auto my-2"
               color="#F7F5F5"
               dark
@@ -62,7 +63,7 @@
 export default {
   data() {
     return {
-      title: "Folow Us",
+      title: "Follow Us",
       Tweets: [
         {
           body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, ",

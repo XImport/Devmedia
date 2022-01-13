@@ -1,14 +1,14 @@
 <template>
   <div>
-    <header class="header-banner-top">
+    <header class="header-banner-top ">
       <div class="banner">
         <div class="banner-image"></div>
 
         <div class="primary-wrapper">
-          <h1 class="site-title">
+          <h1 class="site-title animate__animated animate__bounce">
             <a href="#">{{ title }}</a>
           </h1>
-          <div class="site-tagline">
+          <div class="site-tagline animate__animated animate__fadeInUp">
             {{ body }}
           </div>
           <div id="outer">
@@ -17,7 +17,7 @@
               v-for="(btn, index) in btns"
               :key="index"
             >
-              <v-btn class="ma-2" outlined :color="btn.color" >
+              <v-btn class="ma-2 animate__animated animate__fadeInUp animate__delay-1s " outlined :color="btn.color" >
                 <v-icon>
                   mdi-{{ btn.icon }}
                 </v-icon>

@@ -11,7 +11,7 @@
       <v-icon class="white--text">mdi-history</v-icon>
     </v-btn>
 
-    <v-btn>
+    <v-btn @click="scrollTop()">
       <span class="white--text">top of the page</span>
 
       <v-icon class="white--text">mdi-arrow-up</v-icon>
@@ -20,7 +20,14 @@
 </template>
 <script>
 export default {
-  data: () => ({ value: 1 }),
+  data() {
+    return {};
+  },
+  methods: {
+    scrollTop() {
+      window.scrollTo(0, 0);
+    },
+  },
 };
 </script>
 

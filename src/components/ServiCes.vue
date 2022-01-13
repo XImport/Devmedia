@@ -14,6 +14,7 @@
               class="black white--text"
             >
               <v-card
+              data-aos="zoom-in"
                 elevation="2"
                 shaped
                 tile
