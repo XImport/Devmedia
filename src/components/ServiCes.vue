@@ -1,8 +1,8 @@
 <template>
   <div class="black">
-  <div class="journey-line" ></div>
-    <div class="text-center  bg-cus">
-      <h1 class="white--text ">{{ title }}</h1>
+    <div class="journey-line"></div>
+    <div class="text-center bg-cus">
+      <h1 class="white--text">{{ title }}</h1>
       <v-container class="grey lighten-5 black white--text">
         <v-layout>
           <v-row>
@@ -14,7 +14,7 @@
               class="black white--text"
             >
               <v-card
-              data-aos="zoom-in"
+                data-aos="zoom-in"
                 elevation="2"
                 shaped
                 tile
@@ -95,14 +95,13 @@ export default {
 }
 
 .journey-line {
-    background-color: #000 !important;
-    margin: 0px auto;
-    width: 0%;
-    height: 150px;
-    border-width: 3px;
-    border-style: solid;
-    border-image: linear-gradient( to bottom, #EC008C, #F15B2A, rgba(0, 0, 0, 0) ) 1 100%;
+  background-color: #000 !important;
+  margin: 0px auto;
+  width: 0%;
+  height: 150px;
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #ec008c, #f15b2a, rgba(0, 0, 0, 0)) 1
+    100%;
 }
-
-
 </style>

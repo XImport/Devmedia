@@ -57,7 +57,7 @@ export default {
     drawer: false,
     items: [
       { title: "Home", icon: "mdi-home" ,url : "/"},
-      { title: "Services", icon: "mdi-account-wrench-outline" ,url : "/#"},
+      { title: "Services", icon: "mdi-account-wrench-outline" ,url : "/services"},
       { title: "About", icon: "mdi-information",url : "/about" },
       { title: "Contact", icon: "mdi-email" ,url : "/#"},
     ],
