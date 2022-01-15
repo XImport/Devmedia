@@ -34,11 +34,11 @@
             v-for="(item, index) in items"
             :key="index"
           >
-            <v-list-item>
+            <v-list-item :to="item.url">
               <v-list-item-icon>
                 <v-icon>{{ item.icon }}</v-icon>
               </v-list-item-icon>
-              <v-list-item-title>{{ item.title }}</v-list-item-title>
+              <v-list-item-title >{{ item.title }}</v-list-item-title>
             </v-list-item>
           </v-list-item-group>
         </v-list>
@@ -59,7 +59,7 @@ export default {
       { title: "Home", icon: "mdi-home" ,url : "/"},
       { title: "Services", icon: "mdi-account-wrench-outline" ,url : "/services"},
       { title: "About", icon: "mdi-information",url : "/about" },
-      { title: "Contact", icon: "mdi-email" ,url : "/#"},
+      { title: "Contact", icon: "mdi-email" ,url : "/contact"},
     ],
   }),
 };

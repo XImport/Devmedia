@@ -2,7 +2,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/HomeView.vue'
 import About from '../views/AboutView.vue'
 import Services from "@/views/ServiceView.vue"
-
+import Contact from "@/views/ContactView.vue"
 const routes = [
   {
     path: '/',
@@ -18,6 +18,11 @@ const routes = [
     path: '/services',
     name: 'Services',
     component: Services
+  },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: Contact
   },
 
 ]
