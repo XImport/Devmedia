@@ -7,14 +7,14 @@
       ></v-app-bar-nav-icon>
       <div class="d-flex align-center">
         <v-img
-          alt="Vuetify Logo"
+          alt="Devmedia Logo"
           class="shrink mr-2"
           contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+          src="@/assets/imgs/dmlogo.png"
           transition="scale-transition"
-          width="40"
+          width="220"
         />
-        <v-toolbar-title>DevMedia</v-toolbar-title>
+        <!-- <v-toolbar-title >DevMedia</v-toolbar-title> -->
       </div>
       <v-spacer></v-spacer>
       <div v-for="(item, index) in items" :key="index">
@@ -38,7 +38,7 @@
               <v-list-item-icon>
                 <v-icon>{{ item.icon }}</v-icon>
               </v-list-item-icon>
-              <v-list-item-title >{{ item.title }}</v-list-item-title>
+              <v-list-item-title>{{ item.title }}</v-list-item-title>
             </v-list-item>
           </v-list-item-group>
         </v-list>
@@ -55,11 +55,16 @@ export default {
 
   data: () => ({
     drawer: false,
+    Home: "/",
     items: [
-      { title: "Home", icon: "mdi-home" ,url : "/"},
-      { title: "Services", icon: "mdi-account-wrench-outline" ,url : "/services"},
-      { title: "About", icon: "mdi-information",url : "/about" },
-      { title: "Contact", icon: "mdi-email" ,url : "/contact"},
+      { title: "Home", icon: "mdi-home", url: "/" },
+      {
+        title: "Services",
+        icon: "mdi-account-wrench-outline",
+        url: "/services",
+      },
+      { title: "About", icon: "mdi-information", url: "/about" },
+      { title: "Contact", icon: "mdi-email", url: "/contact" },
     ],
   }),
 };

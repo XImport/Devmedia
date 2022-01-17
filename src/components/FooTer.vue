@@ -5,31 +5,40 @@
     color="primary"
     horizontal
   >
-    <v-btn>
-      <span class="white--text">2022 release</span>
+    <div v-for="(content, index) in contents" :key="index">
+      <v-btn>
+        <span class="white--text">{{ content.btnText }}</span>
 
-      <v-icon class="white--text">mdi-history</v-icon>
-    </v-btn>
-
-    <v-btn @click="scrollTop()">
-      <span class="white--text">top of the page</span>
-
-      <v-icon class="white--text">mdi-arrow-up</v-icon>
-    </v-btn>
+        <v-icon class="white--text">mdi-{{ content.btnLogo }}</v-icon>
+      </v-btn>
+    </div>
   </v-bottom-navigation>
 </template>
 <script>
 export default {
   data() {
-    return {};
-  },
-  methods: {
-    scrollTop() {
-      window.scrollTo(0, 0);
-    },
+    return {
+      contents: [
+        {
+          btnText: "2022 release",
+          btnLogo: "reload-alert",
+        },
+        {
+          btnText: "Facebook Page",
+          btnLogo: "facebook",
+        },
+        {
+          btnText: "Instagram Page",
+          btnLogo: "instagram",
+        },
+        {
+          btnText: "Twitter Page",
+          btnLogo: "twitter",
+        },
+      ],
+    };
   },
 };
 </script>
-
 <style scoped>
 </style>

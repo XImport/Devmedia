@@ -75,7 +75,13 @@ export default {
           icon: "head",
         },
         {
-          title: "Why You need to Us ?",
+          title: "Why You Should Choose Us ?",
+          body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quibusdam odit numquam consequuntur voluptatibus repudiandae officia asperiores quasi esse eos delectus dolorum, iure sit, iusto natus aut cumque fugiat ipsum!",
+          btnTitle: "learn More",
+          icon: "domain",
+        },
+        {
+          title: "How Can We Help Your Business ?",
           body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quibusdam odit numquam consequuntur voluptatibus repudiandae officia asperiores quasi esse eos delectus dolorum, iure sit, iusto natus aut cumque fugiat ipsum!",
           btnTitle: "learn More",
           icon: "domain",

@@ -65,7 +65,7 @@
                         :rules="textareaRules"
                         label="Describe Your Need"
                         required
-                        :counter="180"
+                        :counter="200"
                       ></v-textarea>
                       <!-- <v-select
                               v-model="select"
@@ -116,7 +116,7 @@ export default {
     name: "",
     nameRules: [
       (v) => !!v || "Name is required",
-      (v) => (v && v.length <= 10) || "Name must be less than 10 characters",
+      (v) => (v && v.length <= 20) || "Name must be less than 20 characters",
     ],
     email: "",
     emailRules: [
@@ -127,8 +127,8 @@ export default {
     textareaRules: [
       (v) => !!v || "Please Write quick description about your Needs",
       (v) =>
-        (v && v.length <= 180) ||
-        "Your Description must be less than 10 characters",
+        (v && v.length <= 200) ||
+        "Your Description must be less than 200 characters",
     ],
     // checkbox: false,
   }),

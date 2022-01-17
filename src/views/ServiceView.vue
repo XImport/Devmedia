@@ -83,7 +83,7 @@ export default {
     return {
       contents: [
         {
-          title: "Web Design",
+          title: "Web Devlopment",
           body: "Greyhound divisely hello coldly fonwderfully",
           icon: "button",
           btn: "learn more",
@@ -97,32 +97,32 @@ export default {
           serviceIcon: "draw",
         },
         {
-          title: "UI & UX DESIGN",
+          title: "Tasks Automation",
           body: "Greyhound divisely hello coldly fonwderfully",
           icon: "button2",
           btn: "learn more",
-          serviceIcon: "unity",
+          serviceIcon: "atom",
         },
         {
-          title: "BRANDING",
+          title: "SOCIAL MEDIA MARKETING",
           body: "Greyhound divisely hello coldly fonwderfully",
           icon: "button2",
           btn: "learn more",
-          serviceIcon: "map",
+          serviceIcon: "play-network-outline",
         },
         {
-          title: "DEVLOPMENT",
+          title: "SHOOTING",
           body: "Greyhound divisely hello coldly fonwderfully",
           icon: "button2",
           btn: "learn more",
-          serviceIcon: "code-json",
+          serviceIcon: "camera",
         },
         {
-          title: "SECURITY SYSTEM",
+          title: "MOTION GRAPHICS",
           body: "Greyhound divisely hello coldly fonwderfully",
           icon: "button2",
           btn: "learn more",
-          serviceIcon: "lock-outline",
+          serviceIcon: "animation-play",
         },
       ],
     };
