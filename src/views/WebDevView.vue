@@ -23,8 +23,11 @@
                 <div>
                   <div class="journey-line"></div>
 
-                  <v-container data-aos="zoom-in" class="grey lighten-5 black white--text" fluid>
-                            
+                  <v-container
+                    data-aos="zoom-in"
+                    class="grey lighten-5 black white--text"
+                    fluid
+                  >
                     <v-layout>
                       <v-row>
                         <v-col
@@ -108,7 +111,12 @@
                                     cols="12"
                                     sm="4"
                                   >
-                                    <v-card class="pa-2 black" outlined tile>
+                                    <v-card
+                                      class="pa-2 black"
+                                      id="card-desc"
+                                      outlined
+                                      tile
+                                    >
                                       <v-card-title
                                         class="justify-center black white--text"
                                       >
@@ -132,17 +140,19 @@
                                     </v-card>
                                   </v-col>
                                 </v-row>
-                                <div>
+                                <div class="pt-6">
                                   <v-img
                                     class="bg-color"
                                     max-height="150"
                                     src="https://image.shutterstock.com/image-photo/contact-us-connection-concept-copy-260nw-1861158043.jpg"
                                   >
-                                    <v-btn depressed color="error" class="mt-12">
-                                        <v-icon left>
-                                            mdi-phone
-                                        </v-icon>
-                                        Contact Us !!
+                                    <v-btn
+                                      depressed
+                                      color="error"
+                                      class="mt-12"
+                                    >
+                                      <v-icon left> mdi-phone </v-icon>
+                                      Contact Us !!
                                     </v-btn>
                                   </v-img>
                                 </div>
@@ -213,7 +223,7 @@ export default {
           icon: "speedometer",
         },
         {
-          title: "Resposive",
+          title: "Reliability",
           body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat delectus culpa voluptatem ipsum vitae maiores tempore, quo est aliquam impedit similique illo officiis fugiat ab molestias tenetur iste obcaecati repellendus.",
           icon: "responsive",
         },
@@ -360,5 +370,14 @@ h3 {
 .bg-color {
   background-color: black !important;
   background-size: cover;
+}
+
+#card-desc {
+  transition: transform 0.2s; /* Animation */
+}
+#card-desc:hover {
+  transform: scale(
+    1.05
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 </style>
