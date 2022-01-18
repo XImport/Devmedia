@@ -41,4 +41,7 @@ export default {
 };
 </script>
 <style scoped>
+*{
+  overflow: hidden;
+}
 </style>

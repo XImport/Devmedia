@@ -7,7 +7,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="section_title text-center" data-aos="fade-up">
-                <h2 class="white--text">Web Devlopment</h2>
+                <h2 class="white--text">Shooting Images</h2>
                 <div class="brand_border">
                   <i class="fa fa-minus" aria-hidden="true"></i>
                   <i class="fas fa-handshake"></i>
@@ -24,7 +24,7 @@
                     <div class="container" v-for="(content,index) in contents" :key="index">
                       <img
                         class="container__image"
-                        src="https://www.pluralsight.com/content/dam/pluralsight2/ssa/ssa-homepage/ssa-course-library.png"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrpxRg6lrFo4fOJW_uRgVMwdl0D99wFHo3yA&usqp=CAU"
                       />
                       <div class="container__text pink--text">
                         <h1>{{ content.title }}</h1>
@@ -62,9 +62,6 @@
                         <!-- hereee -->
                         <v-item-group>
                           <v-container>
-                            <div>
-                              <h1>Product Expectation</h1>
-                            </div>
                             <v-row>
                               <v-col v-for="(text,index) in subtexts" :key="index" cols="12" md="4">
                                 <v-item>
@@ -124,7 +121,7 @@ export default {
     return {
       contents: [
         {
-          title: "Web Devlopment",
+          title: "Shooting Images",
           subTitle: "Feel confident your team is learning from the industry’s",
           body: "Upskill your team with courses on the most in-demand technology topics, taught by the experts .",
           icon: "web",
@@ -135,45 +132,14 @@ export default {
       items: [
         {
           icon: "mdi-check",
-          text: "VueJs",
+          text: "Proffesional Images",
         },
         {
           icon: "mdi-check",
-          text: "JQuery",
-        },
-        {
-          icon: "mdi-check",
-          text: "ReactJs",
-        },
-        {
-          icon: "mdi-check",
-          text: "Flask",
-        },
-        {
-          icon: "mdi-check",
-          text: "CloudFire",
-        },
-        {
-          icon: "mdi-check",
-          text: "CSS/SASS",
+          text: "Video Editing",
         },
       ],
       subtexts: [
-        {
-          title: "Speed",
-          body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat delectus culpa voluptatem ipsum vitae maiores tempore, quo est aliquam impedit similique illo officiis fugiat ab molestias tenetur iste obcaecati repellendus.",
-          icon: "speedometer",
-        },
-        {
-          title: "Reliability",
-          body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat delectus culpa voluptatem ipsum vitae maiores tempore, quo est aliquam impedit similique illo officiis fugiat ab molestias tenetur iste obcaecati repellendus.",
-          icon: "responsive",
-        },
-        {
-          title: "Security",
-          body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat delectus culpa voluptatem ipsum vitae maiores tempore, quo est aliquam impedit similique illo officiis fugiat ab molestias tenetur iste obcaecati repellendus.",
-          icon: "lock",
-        },
       ],
     };
   },
@@ -327,7 +293,7 @@ h3 {
   max-width: 95%;
 }
 .container__image {
-  width: 40%;
+  width: 35%;
   height: auto;
   margin: 5% 10% 10% 0%;
   float: left;
@@ -346,5 +312,8 @@ h3 {
     margin: 0% 0% 0% 0%;
     float: left;
   }
+}
+.text--center{
+    margin-left: 0% !important;
 }
 </style>

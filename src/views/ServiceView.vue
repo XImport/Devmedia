@@ -96,7 +96,7 @@ export default {
           icon: "button2",
           btn: "learn more",
           serviceIcon: "draw",
-          url : "/services/webdevlopment"
+          url : "/services/LogoDesign"
         },
         {
           title: "Tasks Automation",
@@ -104,7 +104,7 @@ export default {
           icon: "button2",
           btn: "learn more",
           serviceIcon: "atom",
-          url : "/services/webdevlopment"
+          url : "/services/AutoMations"
         },
         {
           title: "SOCIAL MEDIA MARKETING",
@@ -112,7 +112,7 @@ export default {
           icon: "button2",
           btn: "learn more",
           serviceIcon: "play-network-outline",
-          url : "/services/webdevlopment"
+          url : "/services/SocialMedia"
         },
         {
           title: "SHOOTING",
@@ -120,7 +120,7 @@ export default {
           icon: "button2",
           btn: "learn more",
           serviceIcon: "camera",
-          url : "/services/webdevlopment"
+          url : "/services/Shooting"
         },
         {
           title: "MOTION GRAPHICS",
@@ -128,7 +128,7 @@ export default {
           icon: "button2",
           btn: "learn more",
           serviceIcon: "animation-play",
-          url : "/services/webdevlopment"
+          url : "/services/MotionGraphic"
         },
       ],
     };

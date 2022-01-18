@@ -1,3 +1,4 @@
+
 <template>
   <div class="black">
     <AppNav class="pa-8" />
@@ -7,7 +8,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="section_title text-center" data-aos="fade-up">
-                <h2 class="white--text">Web Devlopment</h2>
+                <h2 class="white--text">Tasks Automations</h2>
                 <div class="brand_border">
                   <i class="fa fa-minus" aria-hidden="true"></i>
                   <i class="fas fa-handshake"></i>
@@ -24,7 +25,7 @@
                     <div class="container" v-for="(content,index) in contents" :key="index">
                       <img
                         class="container__image"
-                        src="https://www.pluralsight.com/content/dam/pluralsight2/ssa/ssa-homepage/ssa-course-library.png"
+                        src="https://www.bizplaneasy.com/assets/img/automation-anywhere-specialists2.jpg?v=1"
                       />
                       <div class="container__text pink--text">
                         <h1>{{ content.title }}</h1>
@@ -39,7 +40,7 @@
                             v-for="(item, index) in items"
                             :key="index"
                             cols="12"
-                            sm="6"
+                            sm="12"
                           >
                             <v-card class="pa-2 black white--text">
                               <div class="links--text">
@@ -63,7 +64,7 @@
                         <v-item-group>
                           <v-container>
                             <div>
-                              <h1>Product Expectation</h1>
+                              <h1>Automation Software Steps</h1>
                             </div>
                             <v-row>
                               <v-col v-for="(text,index) in subtexts" :key="index" cols="12" md="4">
@@ -124,7 +125,7 @@ export default {
     return {
       contents: [
         {
-          title: "Web Devlopment",
+          title: "TASKS AUTOMATIONS",
           subTitle: "Feel confident your team is learning from the industry’s",
           body: "Upskill your team with courses on the most in-demand technology topics, taught by the experts .",
           icon: "web",
@@ -135,44 +136,36 @@ export default {
       items: [
         {
           icon: "mdi-check",
-          text: "VueJs",
+          text: "Pandas",
         },
         {
           icon: "mdi-check",
-          text: "JQuery",
+          text: "Electron",
         },
         {
           icon: "mdi-check",
-          text: "ReactJs",
+          text: "SQL",
         },
         {
           icon: "mdi-check",
-          text: "Flask",
-        },
-        {
-          icon: "mdi-check",
-          text: "CloudFire",
-        },
-        {
-          icon: "mdi-check",
-          text: "CSS/SASS",
+          text: "MSoffice",
         },
       ],
       subtexts: [
         {
-          title: "Speed",
+          title: "Complex Task",
           body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat delectus culpa voluptatem ipsum vitae maiores tempore, quo est aliquam impedit similique illo officiis fugiat ab molestias tenetur iste obcaecati repellendus.",
-          icon: "speedometer",
+          icon: "hexagon-multiple",
         },
         {
-          title: "Reliability",
+          title: "Time Consuming",
           body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat delectus culpa voluptatem ipsum vitae maiores tempore, quo est aliquam impedit similique illo officiis fugiat ab molestias tenetur iste obcaecati repellendus.",
-          icon: "responsive",
+          icon: "timer",
         },
         {
-          title: "Security",
+          title: "Easy To Use",
           body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat delectus culpa voluptatem ipsum vitae maiores tempore, quo est aliquam impedit similique illo officiis fugiat ab molestias tenetur iste obcaecati repellendus.",
-          icon: "lock",
+          icon: "robot-happy-outline",
         },
       ],
     };
