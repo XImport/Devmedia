@@ -53,7 +53,7 @@
                             <v-card-text class="black white--text">{{
                               content.body
                             }}</v-card-text>
-                            <v-btn depressed class="mb-6 black white--text">
+                            <v-btn depressed class="mb-6 black white--text" :to="content.url">
                               <v-icon dark class="black white--text">
                                 mdi-arrow-right-thin
                               </v-icon>
@@ -88,6 +88,7 @@ export default {
           icon: "button",
           btn: "learn more",
           serviceIcon: "web",
+          url : "/services/webdevlopment"
         },
         {
           title: "Logo Design",
@@ -95,6 +96,7 @@ export default {
           icon: "button2",
           btn: "learn more",
           serviceIcon: "draw",
+          url : "/services/webdevlopment"
         },
         {
           title: "Tasks Automation",
@@ -102,6 +104,7 @@ export default {
           icon: "button2",
           btn: "learn more",
           serviceIcon: "atom",
+          url : "/services/webdevlopment"
         },
         {
           title: "SOCIAL MEDIA MARKETING",
@@ -109,6 +112,7 @@ export default {
           icon: "button2",
           btn: "learn more",
           serviceIcon: "play-network-outline",
+          url : "/services/webdevlopment"
         },
         {
           title: "SHOOTING",
@@ -116,6 +120,7 @@ export default {
           icon: "button2",
           btn: "learn more",
           serviceIcon: "camera",
+          url : "/services/webdevlopment"
         },
         {
           title: "MOTION GRAPHICS",
@@ -123,6 +128,7 @@ export default {
           icon: "button2",
           btn: "learn more",
           serviceIcon: "animation-play",
+          url : "/services/webdevlopment"
         },
       ],
     };

@@ -30,7 +30,7 @@
                 <v-card-text class="black white--text">{{
                   service.body
                 }}</v-card-text>
-                <v-btn depressed class="mb-6 black white--text">
+                <v-btn depressed class="mb-6 black white--text" :to="service.url">
                   <v-icon dark class="black white--text">
                     mdi-arrow-right-thin
                   </v-icon>

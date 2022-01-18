@@ -3,11 +3,12 @@ import Home from '../views/HomeView.vue'
 import About from '../views/AboutView.vue'
 import Services from "@/views/ServiceView.vue"
 import Contact from "@/views/ContactView.vue"
+import WebDev from "@/views/WebDevView.vue"
 const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
   },
   {
     path: '/about',
@@ -15,9 +16,14 @@ const routes = [
     component: About
   },
   {
+    path: '/Services/webdevlopment',
+    name: 'Web',
+    component: WebDev
+  },
+  {
     path: '/services',
     name: 'Services',
-    component: Services
+    component: Services,
   },
   {
     path: '/contact',
