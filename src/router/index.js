@@ -9,6 +9,7 @@ import AutoMation from "@/views/AutoView.vue"
 import Social from "@/views/SocialView.vue"
 import Shooting from "@/views/ShootingView.vue"
 import MotionGraphic from "@/views/MotionView.vue"
+import Plans from "@/views/PlansView.vue"
 const routes = [
   {
     path: '/',
@@ -59,6 +60,11 @@ const routes = [
     path: '/contact',
     name: 'Contact',
     component: Contact
+  },
+  {
+    path: '/plans',
+    name: 'Plans',
+    component: Plans
   },
 
 ]

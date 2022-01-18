@@ -17,7 +17,7 @@
               v-for="(btn, index) in btns"
               :key="index"
             >
-              <v-btn class="ma-2 animate__animated animate__fadeInUp animate__delay-1s " outlined :color="btn.color" >
+              <v-btn class="ma-2 animate__animated animate__fadeInUp animate__delay-1s " outlined :color="btn.color" :to="btn.url" >
                 <v-icon>
                   mdi-{{ btn.icon }}
                 </v-icon>
@@ -40,12 +40,14 @@ export default {
         {
           title: "View More",
           color : "purple",
-          icon : "dots-horizontal"
+          icon : "dots-horizontal",
+          url : "/about"
         },
         {
           title: "View Plans",
           color : "blue",
-          icon : "credit-card"
+          icon : "credit-card",
+          url : "plans"
         },
       ],
     };

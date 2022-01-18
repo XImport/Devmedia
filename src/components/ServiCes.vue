@@ -55,6 +55,7 @@ export default {
           body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, sapiente. Et aliquid, libero officiis aliquam expedita recusandae minima similique aspernatur corporis molestiae maxime tempora, eligendi quibusdam. Illo, maiores quaerat! Totam?",
           btn: "Learn More",
           icon: "webpack",
+          url : "/services/webdevlopment"
         },
 
         {
@@ -62,12 +63,14 @@ export default {
           body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, sapiente. Et aliquid, libero officiis aliquam expedita recusandae minima similique aspernatur corporis molestiae maxime tempora, eligendi quibusdam. Illo, maiores quaerat! Totam?",
           btn: "Learn More",
           icon: "account",
+          url : "/services/SocialMedia"
         },
         {
           title: "Automation Tasks",
           body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, sapiente. Et aliquid, libero officiis aliquam expedita recusandae minima similique aspernatur corporis molestiae maxime tempora, eligendi quibusdam. Illo, maiores quaerat! Totam?",
           btn: "Learn More",
           icon: "checkbox-marked-circle-plus-outline",
+          url : "/services/AutoMations"
         },
       ],
     };
