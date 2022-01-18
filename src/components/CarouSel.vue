@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header class="header-banner-top ">
+    <header class="header-banner-top">
       <div class="banner">
         <div class="banner-image"></div>
 
@@ -17,10 +17,16 @@
               v-for="(btn, index) in btns"
               :key="index"
             >
-              <v-btn class="ma-2 animate__animated animate__fadeInUp animate__delay-1s " outlined :color="btn.color" :to="btn.url" >
-                <v-icon>
-                  mdi-{{ btn.icon }}
-                </v-icon>
+              <v-btn
+                class="
+                  ma-2
+                  animate__animated animate__fadeInUp animate__delay-1s
+                "
+                outlined
+                :color="btn.color"
+                :to="btn.url"
+              >
+                <v-icon> mdi-{{ btn.icon }} </v-icon>
                 {{ btn.title }}
               </v-btn>
             </div>
@@ -39,15 +45,15 @@ export default {
       btns: [
         {
           title: "View More",
-          color : "purple",
-          icon : "dots-horizontal",
-          url : "/about"
+          color: "purple",
+          icon: "dots-horizontal",
+          url: "/about",
         },
         {
           title: "View Plans",
-          color : "blue",
-          icon : "credit-card",
-          url : "plans"
+          color: "blue",
+          icon: "credit-card",
+          url: "plans",
         },
       ],
     };

@@ -21,7 +21,11 @@
                 <div>
                   <div class="journey-line"></div>
                   <div>
-                    <div class="container" v-for="(content,index) in contents" :key="index">
+                    <div
+                      class="container"
+                      v-for="(content, index) in contents"
+                      :key="index"
+                    >
                       <img
                         class="container__image"
                         src="http://www.dumdum.dk/wp-content/uploads/2015/08/Buddyfied-motion-graphics.gif"
@@ -63,7 +67,12 @@
                         <v-item-group>
                           <v-container>
                             <v-row>
-                              <v-col v-for="(text,index) in subtexts" :key="index" cols="12" md="4">
+                              <v-col
+                                v-for="(text, index) in subtexts"
+                                :key="index"
+                                cols="12"
+                                md="4"
+                              >
                                 <v-item>
                                   <v-card
                                     data-aos="zoom-in"
@@ -82,7 +91,7 @@
                                   >
                                     <v-card-title
                                       class="justify-center black white--text"
-                                      >
+                                    >
                                       {{ text.title }}</v-card-title
                                     >
                                     <v-icon left class="black white--text"
@@ -147,8 +156,7 @@ export default {
           text: "Video Editing Software",
         },
       ],
-      subtexts: [
-      ],
+      subtexts: [],
     };
   },
   components: {
@@ -321,7 +329,7 @@ h3 {
     float: left;
   }
 }
-.text--center{
-    margin-left: 0% !important;
+.text--center {
+  margin-left: 0% !important;
 }
 </style>

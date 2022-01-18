@@ -30,7 +30,11 @@
                 <v-card-text class="black white--text">{{
                   service.body
                 }}</v-card-text>
-                <v-btn depressed class="mb-6 black white--text" :to="service.url">
+                <v-btn
+                  depressed
+                  class="mb-6 black white--text"
+                  :to="service.url"
+                >
                   <v-icon dark class="black white--text">
                     mdi-arrow-right-thin
                   </v-icon>
@@ -55,7 +59,7 @@ export default {
           body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, sapiente. Et aliquid, libero officiis aliquam expedita recusandae minima similique aspernatur corporis molestiae maxime tempora, eligendi quibusdam. Illo, maiores quaerat! Totam?",
           btn: "Learn More",
           icon: "webpack",
-          url : "/services/webdevlopment"
+          url: "/services/webdevlopment",
         },
 
         {
@@ -63,14 +67,14 @@ export default {
           body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, sapiente. Et aliquid, libero officiis aliquam expedita recusandae minima similique aspernatur corporis molestiae maxime tempora, eligendi quibusdam. Illo, maiores quaerat! Totam?",
           btn: "Learn More",
           icon: "account",
-          url : "/services/SocialMedia"
+          url: "/services/SocialMedia",
         },
         {
           title: "Automation Tasks",
           body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, sapiente. Et aliquid, libero officiis aliquam expedita recusandae minima similique aspernatur corporis molestiae maxime tempora, eligendi quibusdam. Illo, maiores quaerat! Totam?",
           btn: "Learn More",
           icon: "checkbox-marked-circle-plus-outline",
-          url : "/services/AutoMations"
+          url: "/services/AutoMations",
         },
       ],
     };

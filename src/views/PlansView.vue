@@ -9,7 +9,9 @@
           <div class="row">
             <div class="col-md-12">
               <div class="section_title text-center">
-                <h2 class="white--text animate__animated animate__fadeInUp">View Plans</h2>
+                <h2 class="white--text animate__animated animate__fadeInUp">
+                  View Plans
+                </h2>
                 <div class="brand_border">
                   <i class="fa fa-minus" aria-hidden="true"></i>
                   <i class="fas fa-handshake"></i>
@@ -24,8 +26,14 @@
                   <div class="journey-line"></div>
                 </div>
                 <section id="lab_pricing_table">
-                  <div class="pricing-tables attached animate__animated animate__fadeInUp">
-                    <div class="row ">
+                  <div
+                    class="
+                      pricing-tables
+                      attached
+                      animate__animated animate__fadeInUp
+                    "
+                  >
+                    <div class="row">
                       <div class="col-sm-4 col-md-4 card--price">
                         <div class="plan first">
                           <div class="head">
@@ -42,9 +50,7 @@
                             <h4>per month</h4>
                           </div>
                           <v-btn depressed class="btn btn-success">
-                              <v-icon left>
-                                  mdi-email
-                              </v-icon>
+                            <v-icon left> mdi-email </v-icon>
                             Contact Us
                           </v-btn>
                         </div>
@@ -65,9 +71,7 @@
                             <h4>per month</h4>
                           </div>
                           <v-btn depressed class="btn btn-success">
-                              <v-icon left>
-                                  mdi-email
-                              </v-icon>
+                            <v-icon left> mdi-email </v-icon>
                             Contact Us
                           </v-btn>
                         </div>
@@ -88,9 +92,7 @@
                             <h4>per month</h4>
                           </div>
                           <v-btn depressed class="btn btn-success">
-                              <v-icon left>
-                                  mdi-email
-                              </v-icon>
+                            <v-icon left> mdi-email </v-icon>
                             Contact Us
                           </v-btn>
                         </div>
@@ -456,8 +458,8 @@ h3 {
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.card--price{
-    transition: transform 0.5s ease;
+.card--price {
+  transition: transform 0.5s ease;
 }
 .card--price:hover {
   transform: scale(
