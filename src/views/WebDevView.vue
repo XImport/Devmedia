@@ -24,9 +24,9 @@
                     <div class="container" v-for="(content,index) in contents" :key="index">
                       <img
                         class="container__image"
-                        src="https://www.pluralsight.com/content/dam/pluralsight2/ssa/ssa-homepage/ssa-course-library.png"
+                        src="@/assets/imgs/webdevbanner.png"
                       />
-                      <div class="container__text pink--text">
+                      <div class="container__text white--text">
                         <h1>{{ content.title }}</h1>
                         <h3 class="white--text">
                           {{ content.subTitle }}
@@ -329,7 +329,7 @@ h3 {
 .container__image {
   width: 40%;
   height: auto;
-  margin: 5% 10% 10% 0%;
+  /* margin: 5% 10% 10% 0%; */
   float: left;
 }
 .container__text {

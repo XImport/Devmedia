@@ -24,9 +24,9 @@
                     <div class="container" v-for="(content,index) in contents" :key="index">
                       <img
                         class="container__image"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrpxRg6lrFo4fOJW_uRgVMwdl0D99wFHo3yA&usqp=CAU"
+                        src="@/assets/imgs/shoting.jpg"
                       />
-                      <div class="container__text pink--text">
+                      <div class="container__text white--text">
                         <h1>{{ content.title }}</h1>
                         <h3 class="white--text">
                           {{ content.subTitle }}

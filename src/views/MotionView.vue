@@ -28,9 +28,9 @@
                     >
                       <img
                         class="container__image"
-                        src="http://www.dumdum.dk/wp-content/uploads/2015/08/Buddyfied-motion-graphics.gif"
+                        src="@/assets/imgs/Buddyfied-motion-graphics.gif"
                       />
-                      <div class="container__text pink--text">
+                      <div class="container__text white--text">
                         <h1>{{ content.title }}</h1>
                         <h3 class="white--text">
                           {{ content.subTitle }}

@@ -32,6 +32,19 @@
                     class="lighten-5 white--text bl--tr cont--section"
                     fluid
                   >
+                    <div class="bg-container">
+                      <v-alert
+                        :value="alert"
+                        color="green"
+                        dark
+                        class="text-center"
+                        dismissible
+                        icon="mdi-check"
+                        transition="scale-transition"
+                      >
+                        {{ msg }}
+                      </v-alert>
+                    </div>
                     <v-form
                       ref="form"
                       data-aos="zoom-in"
@@ -109,6 +122,8 @@ import appNav from "@/components/NavBar.vue";
 import appFooter from "@/components/FooTer.vue";
 export default {
   data: () => ({
+    alert: false,
+    msg: "Thank You For Contacting us !! we will reach out to you as soon as possible",
     title: "About Us",
     body: "some body text",
     subPara: "Text",
@@ -136,13 +151,17 @@ export default {
   methods: {
     validate() {
       this.$refs.form.validate();
+      if (this.$refs.form.validate()) {
+        this.alert = !this.alert;
+        this.reset();
+      }
     },
     reset() {
       this.$refs.form.reset();
     },
-    resetValidation() {
-      this.$refs.form.resetValidation();
-    },
+    // resetValidation() {
+    //   this.$refs.form.resetValidation();
+    // },
   },
   components: {
     AppNav: appNav,
@@ -327,5 +346,15 @@ h3 {
 }
 .banner h1 h3 h6 {
   display: inline-block;
+}
+@media only screen and (max-width: 600px) {
+  .bg-container {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+.bg-container {
+  width: 70%;
+  margin-left: 20%;
 }
 </style>

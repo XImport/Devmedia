@@ -76,7 +76,7 @@ export default {
   margin: 0 auto;
   max-width: 100%;
   height: 100%;
-  background-image: url(https://www.pluralsight.com/content/dam/pluralsight2/homepage/2022/hero-illustration.png);
+  background-image: url("@/assets/imgs/background.png");
   background-size: cover;
   background-position: center;
   background-color: #000000;

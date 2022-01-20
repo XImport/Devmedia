@@ -24,9 +24,9 @@
                     <div class="container" v-for="(content,index) in contents" :key="index">
                       <img
                         class="container__image"
-                        src="https://st4.depositphotos.com/21242680/23796/v/950/depositphotos_237966758-stock-illustration-set-bright-social-media-logotypes.jpg"
+                        src="@/assets/imgs/socials.jpg"
                       />
-                      <div class="container__text pink--text">
+                      <div class="container__text white--text">
                         <h1>{{ content.title }}</h1>
                         <h3 class="white--text">
                           {{ content.subTitle }}

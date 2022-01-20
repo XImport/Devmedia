@@ -24,9 +24,9 @@
                     <div class="container" v-for="(content,index) in contents" :key="index">
                       <img
                         class="container__image"
-                        src="https://i.pinimg.com/originals/66/b6/af/66b6af09c14ebcfbfa3548612a08bb47.jpg"
+                        src="@/assets/imgs/logobanner.jpg"
                       />
-                      <div class="container__text pink--text">
+                      <div class="container__text white--text">
                         <h1>{{ content.title }}</h1>
                         <h3 class="white--text">
                           {{ content.subTitle }}
@@ -319,9 +319,9 @@ h3 {
   max-width: 95%;
 }
 .container__image {
-  width: 3%;
+  width: 30%;
   height: auto;
-  margin: 5% 10% 10% 0%;
+  /* margin: 5% 10% 10% 0%; */
   float: left;
 }
 .container__text {
