@@ -2,6 +2,7 @@
 <template>
   <div class="black">
     <AppNav class="pa-12" />
+
     <div class="mt-12 bg-cus">
       <div class="banner">
         <div class="banner-text animate__animated animate__bounce">
@@ -34,7 +35,7 @@
                   >
                     <div class="bg-container">
                       <v-alert
-                        :value="alert"
+                        v-model="alert"
                         color="green"
                         dark
                         class="text-center"
@@ -44,6 +45,12 @@
                       >
                         {{ msg }}
                       </v-alert>
+                      <div v-if="loading">
+                        <v-progress-linear
+                          indeterminate
+                          color="purple accent-1"
+                        ></v-progress-linear>
+                      </div>
                     </div>
                     <v-form
                       ref="form"
@@ -120,9 +127,12 @@
 <script>
 import appNav from "@/components/NavBar.vue";
 import appFooter from "@/components/FooTer.vue";
+import axios from "@/axios";
+// import "@/axiosConfig";
 export default {
   data: () => ({
     alert: false,
+    loading: false,
     msg: "Thank You For Contacting us !! we will reach out to you as soon as possible",
     title: "About Us",
     body: "some body text",
@@ -152,8 +162,18 @@ export default {
     validate() {
       this.$refs.form.validate();
       if (this.$refs.form.validate()) {
-        this.alert = !this.alert;
-        this.reset();
+        const data = {
+          FullName: this.name,
+          email: this.email,
+          message: this.textarea,
+        };
+        this.loading = !this.loading;
+        axios.post("contact", data).then((res) => {
+          this.loading = !this.loading;
+          console.log(res);
+          this.alert = !this.alert;
+          this.reset();
+        });
       }
     },
     reset() {

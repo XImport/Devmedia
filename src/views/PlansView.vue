@@ -49,7 +49,7 @@
                             <h3><span class="symbol">$</span>19</h3>
                             <h4>per month</h4>
                           </div>
-                          <v-btn depressed class="btn btn-success">
+                          <v-btn depressed class="btn btn-success" to="/contact">
                             <v-icon left> mdi-email </v-icon>
                             Contact Us
                           </v-btn>
@@ -70,7 +70,7 @@
                             <h3><span class="symbol">$</span>29</h3>
                             <h4>per month</h4>
                           </div>
-                          <v-btn depressed class="btn btn-success">
+                          <v-btn depressed class="btn btn-success" to="/contact" >
                             <v-icon left> mdi-email </v-icon>
                             Contact Us
                           </v-btn>
@@ -91,7 +91,7 @@
                             <h3><span class="symbol">$</span>49</h3>
                             <h4>per month</h4>
                           </div>
-                          <v-btn depressed class="btn btn-success">
+                          <v-btn depressed class="btn btn-success" to="/contact" >
                             <v-icon left> mdi-email </v-icon>
                             Contact Us
                           </v-btn>
@@ -349,6 +349,9 @@ export default {
   transform: scale(
     1.15
   ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  box-shadow: -2px 10px 14px -1px rgba(3,161,0,0.55);
+-webkit-box-shadow: -2px 10px 14px -1px rgba(3,161,0,0.55);
+-moz-box-shadow: -2px 10px 14px -1px rgba(3,161,0,0.55);
 }
 
 .journey-line {
@@ -459,11 +462,14 @@ h3 {
   transition: all 0.3s ease;
 }
 .card--price {
-  transition: transform 0.5s ease;
+  transition: all 0.5s ease;
 }
 .card--price:hover {
   transform: scale(
     1.05
   ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  box-shadow: 1px 9px 10px -2px rgba(3,161,0,0.33);
+-webkit-box-shadow: 1px 9px 10px -2px rgba(3,161,0,0.33);
+-moz-box-shadow: 1px 9px 10px -2px rgba(3,161,0,0.33);
 }
 </style>
