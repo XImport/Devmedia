@@ -67,7 +67,7 @@ export default {
       Tweets: [
         {
           body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, ",
-          user: "Learn More",
+          user: "user 1",
           likes: "250",
           share: "40",
           img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQItbBk-6_jeKzt7VVOTJ4LWkXlj3YtwhLYIsrDmrQFaYlBopkKB4thzXqcwrzJH_kp1mw&usqp=CAU",
@@ -75,15 +75,15 @@ export default {
 
         {
           body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, ",
-          user: "Learn More",
           likes: "300",
+          user: "user 2",
           share: "10",
           img: "https://pngset.com/images/crew-cut-mark-zuckerberg-face-head-person-portrait-photography-transparent-png-57963.png",
         },
         {
           body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, ",
-          user: "Learn More",
           likes: "100",
+          user: "user 3",
           share: "50",
           img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAWAD7aKJI-FBgeLggN2ucxe3PxthQl28RMw&usqp=CAU",
         },
@@ -137,5 +137,8 @@ card:hover {
   border-style: solid;
   border-image: linear-gradient(to bottom, #ec008c, #f15b2a, rgba(0, 0, 0, 0)) 1
     100%;
+}
+.v-list-item__content{
+  flex: none;
 }
 </style>
