@@ -1,4 +1,3 @@
-
 <template>
   <div class="black">
     <AppNav class="pa-12" />
@@ -106,6 +105,7 @@
                         :disabled="!valid"
                         color="gray"
                         class="mr-4"
+                        large
                         @click="validate"
                       >
                         <v-icon left> mdi-send </v-icon>
@@ -130,6 +130,10 @@ import appFooter from "@/components/FooTer.vue";
 import axios from "@/axios";
 // import "@/axiosConfig";
 export default {
+  metaInfo: {
+    title: "Devmedia",
+    titleTemplate: "%s | Contact Us ",
+  },
   data: () => ({
     alert: false,
     loading: false,

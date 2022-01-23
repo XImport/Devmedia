@@ -33,7 +33,12 @@
                 <v-card-text class="black white--text">{{
                   framework.body
                 }}</v-card-text>
-                <v-btn depressed class="mb-6 black white--text">
+                <v-btn
+                  depressed
+                  class="mb-6 black white--text"
+                  :href="framework.url"
+                  target="_blank"
+                >
                   <v-icon dark class="black white--text">
                     mdi-arrow-right-thin
                   </v-icon>
@@ -59,6 +64,7 @@ export default {
           btn: "Learn More",
           icon: "vuejs",
           img: "https://images.ctfassets.net/ooa29xqb8tix/RrX9HCiZ8qPoIpJSlHphR/f9778b44e2b768d31fafb4ac70956682/vue-logo.png?w=400&q=50",
+          url: "https://www.tutorialspoint.com/vuejs/vuejs_overview.htm#:~:text=VueJS%20is%20an%20open%20source,end%20development%20without%20any%20issues.",
         },
 
         {
@@ -67,6 +73,7 @@ export default {
           btn: "Learn More",
           icon: "react",
           img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN3xvEmDO5XMQ1O7Rgk7Rrf8QKzrN_3jo0co5gTo0lW4G-t0NRcOi2MwJO1XpYzU4CsUA&usqp=CAU",
+          url: "https://www.simplilearn.com/tutorials/reactjs-tutorial/what-is-reactjs#:~:text=React%20is%20a%20JavaScript%2Dbased,frontend%20libraries%20for%20web%20development.",
         },
         {
           title: "SQL",
@@ -74,6 +81,7 @@ export default {
           btn: "Learn More",
           icon: "database-cog",
           img: "https://thumbs.dreamstime.com/b/sql-database-icon-logo-design-ui-ux-app-gold-inscription-dark-black-background-96842123.jpg",
+          url: "https://www.sqlshack.com/sql-definition/#:~:text=Basically%2C%20SQL%20stands%20for%20Structured,%2C%20procedures%2C%20etc.).",
         },
         {
           title: "Python",
@@ -81,6 +89,7 @@ export default {
           btn: "Learn More",
           icon: "vector-polyline-edit",
           img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEVDJgFhyaPSObMtrBjvTBs6VnRu64Nx1AzGnCcSqrx1BoDIYBwmmfTDVdFrmG1uEl6qk&usqp=CAU",
+          url: "https://pymbook.readthedocs.io/en/latest/flask.html#:~:text=Flask%20is%20a%20web%20framework,application%20or%20a%20commercial%20website.",
         },
       ],
     };

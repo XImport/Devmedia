@@ -80,13 +80,7 @@
                                     shaped
                                     outlined
                                     tile
-                                    class="
-                                      mx-auto
-                                      my-12
-                                      black
-                                      white--text
-                                      br--purple
-                                    "
+                                    class="mx-auto my-12 black white--text br--purple"
                                     id="card"
                                   >
                                     <v-card-title
@@ -126,6 +120,10 @@
 import appNav from "@/components/NavBar.vue";
 import appFooter from "@/components/FooTer.vue";
 export default {
+  metaInfo: {
+    title: "Devmedia",
+    titleTemplate: "%s | Motion Graphic ",
+  },
   data() {
     return {
       contents: [

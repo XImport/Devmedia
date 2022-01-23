@@ -18,10 +18,7 @@
               :key="index"
             >
               <v-btn
-                class="
-                  ma-2
-                  animate__animated animate__fadeInUp animate__delay-1s
-                "
+                class="ma-2 animate__animated animate__fadeInUp animate__delay-1s"
                 outlined
                 :color="btn.color"
                 :to="btn.url"

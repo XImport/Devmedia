@@ -18,6 +18,13 @@ import appSocials from "@/components/SocialMedia";
 import appFooter from "@/components/FooTer";
 export default {
   name: "App",
+  metaInfo: {
+    title: "Devmedia",
+    titleTemplate: "%s | Home ",
+  },
+  data: () => ({
+    //
+  }),
 
   components: {
     AppNav: appNav,
@@ -27,9 +34,5 @@ export default {
     AppSocials: appSocials,
     AppFooter: appFooter,
   },
-
-  data: () => ({
-    //
-  }),
 };
 </script>

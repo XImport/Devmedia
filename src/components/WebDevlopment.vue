@@ -1,10 +1,8 @@
 <template>
-    <div>
-        <h1>hello world</h1>
-    </div>
+  <div>
+    <h1>hello world</h1>
+  </div>
 </template>
 <script>
-export default {
-    
-}
+export default {};
 </script>

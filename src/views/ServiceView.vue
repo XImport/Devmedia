@@ -53,7 +53,11 @@
                             <v-card-text class="black white--text">{{
                               content.body
                             }}</v-card-text>
-                            <v-btn depressed class="mb-6 black white--text" :to="content.url">
+                            <v-btn
+                              depressed
+                              class="mb-6 black white--text"
+                              :to="content.url"
+                            >
                               <v-icon dark class="black white--text">
                                 mdi-arrow-right-thin
                               </v-icon>
@@ -79,6 +83,10 @@
 import appNav from "@/components/NavBar.vue";
 import appFooter from "@/components/FooTer.vue";
 export default {
+  metaInfo: {
+    title: "Devmedia",
+    titleTemplate: "%s | Services ",
+  },
   data() {
     return {
       contents: [
@@ -88,7 +96,7 @@ export default {
           icon: "button",
           btn: "learn more",
           serviceIcon: "web",
-          url : "/services/webdevlopment"
+          url: "/services/webdevlopment",
         },
         {
           title: "Logo Design",
@@ -96,7 +104,7 @@ export default {
           icon: "button2",
           btn: "learn more",
           serviceIcon: "draw",
-          url : "/services/LogoDesign"
+          url: "/services/LogoDesign",
         },
         {
           title: "Tasks Automation",
@@ -104,7 +112,7 @@ export default {
           icon: "button2",
           btn: "learn more",
           serviceIcon: "atom",
-          url : "/services/AutoMations"
+          url: "/services/AutoMations",
         },
         {
           title: "SOCIAL MEDIA MARKETING",
@@ -112,7 +120,7 @@ export default {
           icon: "button2",
           btn: "learn more",
           serviceIcon: "play-network-outline",
-          url : "/services/SocialMedia"
+          url: "/services/SocialMedia",
         },
         {
           title: "SHOOTING",
@@ -120,7 +128,7 @@ export default {
           icon: "button2",
           btn: "learn more",
           serviceIcon: "camera",
-          url : "/services/Shooting"
+          url: "/services/Shooting",
         },
         {
           title: "MOTION GRAPHICS",
@@ -128,7 +136,7 @@ export default {
           icon: "button2",
           btn: "learn more",
           serviceIcon: "animation-play",
-          url : "/services/MotionGraphic"
+          url: "/services/MotionGraphic",
         },
       ],
     };

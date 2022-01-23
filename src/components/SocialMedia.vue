@@ -138,7 +138,7 @@ card:hover {
   border-image: linear-gradient(to bottom, #ec008c, #f15b2a, rgba(0, 0, 0, 0)) 1
     100%;
 }
-.v-list-item__content{
+.v-list-item__content {
   flex: none;
 }
 </style>

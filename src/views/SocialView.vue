@@ -21,7 +21,11 @@
                 <div>
                   <div class="journey-line"></div>
                   <div>
-                    <div class="container" v-for="(content,index) in contents" :key="index">
+                    <div
+                      class="container"
+                      v-for="(content, index) in contents"
+                      :key="index"
+                    >
                       <img
                         class="container__image"
                         src="@/assets/imgs/socials.jpg"
@@ -63,7 +67,12 @@
                         <v-item-group>
                           <v-container>
                             <v-row>
-                              <v-col v-for="(text,index) in subtexts" :key="index" cols="12" md="4">
+                              <v-col
+                                v-for="(text, index) in subtexts"
+                                :key="index"
+                                cols="12"
+                                md="4"
+                              >
                                 <v-item>
                                   <v-card
                                     data-aos="zoom-in"
@@ -71,18 +80,12 @@
                                     shaped
                                     outlined
                                     tile
-                                    class="
-                                      mx-auto
-                                      my-12
-                                      black
-                                      white--text
-                                      br--purple
-                                    "
+                                    class="mx-auto my-12 black white--text br--purple"
                                     id="card"
                                   >
                                     <v-card-title
                                       class="justify-center black white--text"
-                                      >
+                                    >
                                       {{ text.title }}</v-card-title
                                     >
                                     <v-icon left class="black white--text"
@@ -117,6 +120,10 @@
 import appNav from "@/components/NavBar.vue";
 import appFooter from "@/components/FooTer.vue";
 export default {
+  metaInfo: {
+    title: "Devmedia",
+    titleTemplate: "%s | Social Media Marketing ",
+  },
   data() {
     return {
       contents: [
@@ -147,8 +154,7 @@ export default {
           text: "Youtube Ads",
         },
       ],
-      subtexts: [
-      ],
+      subtexts: [],
     };
   },
   components: {
@@ -321,7 +327,7 @@ h3 {
     float: left;
   }
 }
-.text--center{
-    margin-left: 0% !important;
+.text--center {
+  margin-left: 0% !important;
 }
 </style>

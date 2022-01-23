@@ -56,6 +56,10 @@
 import appNav from "@/components/NavBar.vue";
 import appFooter from "@/components/FooTer.vue";
 export default {
+  metaInfo: {
+    title: "Devmedia",
+    titleTemplate: "%s | About Us",
+  },
   data() {
     return {
       title: "About Us",
@@ -96,7 +100,7 @@ export default {
 };
 </script>
 
-<style  scoped>
+<style scoped>
 .journey-line {
   background-color: #000 !important;
   margin: 0px auto;
