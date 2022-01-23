@@ -80,6 +80,7 @@
 
                       <v-textarea
                         dark
+                        v-model="textarea"
                         class="bl--tr"
                         :rules="textareaRules"
                         label="Describe Your Need"
@@ -172,7 +173,7 @@ export default {
           message: this.textarea,
         };
         this.loading = !this.loading;
-        axios.post("contact", data).then((res) => {
+        axios.post("api/contact", data).then((res) => {
           this.loading = !this.loading;
           console.log(res);
           this.alert = !this.alert;

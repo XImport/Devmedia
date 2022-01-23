@@ -1,12 +1,13 @@
 {
-  "name": "vuetify",
+  "name": "Devmedia",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "pretty": "prettier --write \"./**/*.{js,jsx,json,vue}\""
+    "pretty": "prettier --write \"./**/*.{js,jsx,json,vue}\"",
+    "api" : "python server/runner.py"
   },
   "dependencies": {
     "animate.css": "^4.1.1",

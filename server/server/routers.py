@@ -3,13 +3,14 @@ from flask import jsonify, request
 from flask_mail import Message
 from flask_cors import cross_origin
 
-@app.route("/")
+
+@app.route("/api/home")
 def home():
     return jsonify({"data": "hello world"})
 
 
 # supp0rt.devmedia@yandex.com
-@app.route("/contact", methods=["POST"])
+@app.route("/api/contact", methods=["POST"])
 @cross_origin()
 def contact():
     try:
